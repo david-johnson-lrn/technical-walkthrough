@@ -1,0 +1,56 @@
+.gallery {
+    display: flex;
+    width: 85%;
+    height: 200px;
+    z-index: 1;
+}
+
+.gallery img {
+    min-width: 0;
+    flex: 1 1 1px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.gallery img:hover {
+    flex: 2 1 1%;
+    opacity: 1;
+}
+
+.full {
+    padding: 50px;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    transform: translateY(-150px);
+}
+
+.top-row {
+    margin: 20px 20px 0px 20px;
+}
+
+.move-up {
+
+    transform: translateY(-120%);
+    transition: transform .25s ease;
+}
+
+.move-down {
+
+    transform: translateY(0px);
+    transition: transform .25s ease;
+}
+
+.moveDiv {
+
+    transform: translateY(-120%);
+
+}
+
+#image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
