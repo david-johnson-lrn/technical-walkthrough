@@ -1,6 +1,6 @@
 .gallery {
     display: flex;
-    width: 85%;
+    width: 50%;
     height: 200px;
     z-index: 1;
 }
@@ -20,11 +20,11 @@
 
 .full {
     padding: 50px;
-    height: 95vh;
-
+    height: 90vh;
     display: flex;
     justify-content: center;
-    transform: translateY(-150px);
+    transform: translateY(-10px);
+
 }
 
 .top-row {
@@ -43,14 +43,108 @@
     transition: transform .25s ease;
 }
 
-.moveDiv {
-
-    transform: translateY(-120%);
-
-}
 
 #image {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 10px
+}
+
+#mainView {
+    position: relative;
+    /* right: 2000px; */
+}
+
+#codeView {
+    position: relative;
+    left: 3000px;
+}
+
+#codeArrow {
+
+    padding: 8px 16px;
+    position: fixed;
+    right: 30px;
+    top: 40vh;
+    font-size: 90px;
+}
+
+#demoArrow {
+    position: relative;
+    /* right: 30px;*/
+    top: 35vh;
+    font-size: 90px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+aside p:hover {
+    transform: scale(1.8);
+    transition: transform .5s ease;
+    cursor: pointer
+}
+
+/* copied from Demo styles.css */
+.headerButtons {
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    left: 3px;
+    top: 0px
+}
+
+/*need to add mobile responsive styling */
+.buttonOveride {
+    display: inline-block;
+    width: 33%;
+    border-radius: 0%;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+.card {
+    margin: .2rem;
+    padding: 1.5rem;
+}
+
+.fullWidth {
+    height: auto;
+    max-width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-around;
+}
+
+.images {
+    margin: 40px;
+    padding: 75px;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+.push {
+    margin-top: 5vh;
+}
+
+.marginBuffer {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+
+}
+
+.imgTitle {
+    text-decoration: underline;
 }
