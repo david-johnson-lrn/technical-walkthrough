@@ -1,6 +1,25 @@
+body {
+    font-family: "Gilroy Medium";
+
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+}
+
 .gallery {
     display: flex;
-    width: 50%;
+    width: 75%;
     height: 200px;
     z-index: 1;
 }
@@ -16,6 +35,19 @@
 .gallery img:hover {
     flex: 2 1 1%;
     opacity: 1;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    margin: 0;
+}
+
+.navbar a:hover {
+    color: blue !important;
 }
 
 .full {
@@ -48,8 +80,8 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: black solid 2px;
-    border-radius: 10px;
+    /* border: black solid 2px;
+    border-radius: 10px; */
     padding: 10px
 }
 
@@ -78,7 +110,7 @@
     top: 35vh;
     font-size: 90px;
     cursor: pointer;
-    z-index: 1;
+
 }
 
 aside p:hover {
@@ -126,6 +158,8 @@ h2 {
 .spaceBetween {
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    bottom: 1vh;
 }
 
 .images {
@@ -147,4 +181,41 @@ h2 {
 
 .imgTitle {
     text-decoration: underline;
+}
+
+#codeView .content {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#codeView .content:hover {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+#codeView button {
+    margin-left: 10px
+}
+
+#codeView section .card {
+    height: 26vh;
+}
+
+.footer {
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    padding: 1rem
+}
+
+#rectangle {
+    position: absolute;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    /* pointer-events: none; */
+    z-index: 9999;
+}
+
+#select:hover {
+    cursor: pointer;
 }
